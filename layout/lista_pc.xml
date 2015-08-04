@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Departamento"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <!-- Cambiar el nombre de departamento por el clickado en el main -->
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="46dp"
+        android:text="scan" />
+
+    <Button
+        android:id="@+id/actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/scan"
+        android:layout_alignBottom="@+id/scan"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/scan"
+        android:text="act" />
+
+    <ListView
+        android:id="@+id/objetos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scan"
+        android:layout_below="@+id/department"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+	<!-- Listar objetos del departamento de la BBDD -->
+</RelativeLayout>
